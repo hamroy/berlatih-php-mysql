@@ -33,7 +33,7 @@ SELECT * FROM `items` WHERE price > 1000000;
 SELECT * FROM `items` WHERE `name` LIKE '%sang%'
 
 -- c
-SELECT * FROM `items` INNER JOIN `categories` ON items.category_id=categories.id
+SELECT items.name, description, price, stock, category_id, categories.name as kategori FROM `items` INNER JOIN `categories` ON items.category_id=categories.id
 
 -- jawaban dengan nomor 5.
 
